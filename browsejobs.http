@@ -1,0 +1,36 @@
+GET http://localhost:3006/
+
+###
+POST http://localhost:3008/jobseeker/
+Content-Type: application/json
+
+{
+    "typeofReg" : "recruiter",
+    "companyname":"infosys",
+   "email":"janardhanreddy1234@gamail.com",
+   "mobile":9848022338,   
+   "password":"123" ,
+   "confirmPassword":"123" 
+}
+
+###
+
+
+
+
+###
+POST http://localhost:3008/login 
+Content-Type: application/json
+
+{
+   "email":"janardhanreddy1234@gamail.com",
+   "password":"123"
+}
+
+###
+GET http://localhost:3008/alldevelopers
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRiOWU1ZjcxZTkyOWQzNDQ3NjA0ODlmIiwiaWF0IjoxNjg5OTMwNjgwLCJleHAiOjE3MjU5MzA2ODB9.V1G5h6nt8l8nzwzKAJ8MVQhTjQcLmxWn4WXFCzrenO4
+
+###
+GET http://localhost:3006/individualprofile/64b9d707dbf73c27677ff5ec
+token: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjoiNjRiOWU1ZjcxZTkyOWQzNDQ3NjA0ODlmIiwiaWF0IjoxNjg5OTMwNjgwLCJleHAiOjE3MjU5MzA2ODB9.V1G5h6nt8l8nzwzKAJ8MVQhTjQcLmxWn4WXFCzrenO4
